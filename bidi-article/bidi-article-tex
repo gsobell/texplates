@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{polyglossia}
+\usepackage{multicol}
+
+% NB: must compile with \XeLaTeX !
+% Make sure you have hebrew fonts installed.
+% Use flushright to align hebrew text
+
+%% bidi-article.tex
+%% copyright 2023 gsobell
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+% https://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008 or later.
+%
+% This work has the LPPL maintenance status `author-maintained'.
+%
+% This work consists as found in `manifest.md'.
+
+
+
+\setdefaultlanguage{english}
+\setotherlanguage{hebrew}
+\usepackage{fontspec}
+\newfontfamily\hebrewfont[Script=Hebrew]{David CLM}
+\newfontfamily\hebrewfonttt[Script=Hebrew]{Miriam Mono CLM}
+\newfontfamily\hebrewfontsf[Script=Hebrew]{Simple CLM}
+\usepackage{bidi}
+
+    \title{\textbf{Title Goes Here}}
+    \author{@gsobell}
+    \date{\today}
+    \addtolength{\topmargin}{-3cm}
+    \addtolength{\textheight}{3cm}
+
+\begin{document}
+
+% \maketitle
+\pagenumbering{arabic}
+
+
+\section{On Rabbits and Lettuce:}
+\begin{multicols}{2}
+\begin{flushright}
+\texthebrew{שפן אכל קצת גזר בטעם חסה, ודי.}
+ \end{flushright}
+A rabbit ate some lettuce-flavored carrot, and that was all.
+\end{multicols}
+
+
+\end{document}
