@@ -1,2 +1,2 @@
-# math-article
-Basic document, optimized for computer science.
+# cs-article
+Basic document, including packages optimized for computer science.

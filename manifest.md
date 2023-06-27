@@ -14,3 +14,4 @@ Files included under LPPL license:
     ├── math-article.tex
     └── README.md
 ```
+Sample `.pdf`s and other files are not included.

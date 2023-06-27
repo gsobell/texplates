@@ -1,5 +1,5 @@
 # texplates
-My personal $\text{\LaTeX}$ templates.
+My personal LaTeX templates.
 
 ***
 
