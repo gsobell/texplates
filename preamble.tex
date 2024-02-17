@@ -1,0 +1,64 @@
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{microtype}
+\usepackage{multicol}
+\usepackage{parskip}
+\usepackage{pgfplots}
+\usepackage{tikz-cd}
+\usepackage{tikz}
+\usepackage{thmtools}
+\usepackage{todonotes}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+
+\pgfplotsset{compat=newest}
+%\usepgfplotslibrary{external} %speed up compile
+%\tikzexternalize
+
+\hypersetup{
+  colorlinks   = true,  % Colors links instead of ugly boxes
+  urlcolor     = blue,  % Color for external hyperlinks
+  linkcolor    = black, % Color of internal links
+  citecolor    = red    % Color of citations
+}
+
+% following style guidelines of AMS
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollary}[theorem]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem*{notation}{Notation}
+\newtheorem*{axiom}{Axiom}
+
+\theoremstyle{remark}
+\newtheorem*{note}{Note}
+\newtheorem*{remark}{Remark}
+\newtheorem*{reminder}{Reminder}
+\newtheorem*{property}{Property}
+\newtheorem{example}{Example}[section]
+\newtheorem*{claim}{Claim}
+\newtheorem*{conclusion}{Conclusion}
+
+% will automatically use Fira Code for monospaceif compiled with XeTeX 
+\usepackage{ifxetex}
+\ifxetex
+\usepackage{fontspec}
+\setmonofont[
+  Contextuals={Alternate}
+]{Fira Code}
+\makeatletter
+\def\verbatim@nolig@list{}
+\makeatother
+\fi
+
