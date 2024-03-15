@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\usepackage{multicol}
+\usepackage{parskip}
+\usepackage{ragged2e}
+% NB: must compile with LuaLaTeX !
+% Make sure you have hebrew fonts installed.
+% Use flushright to align hebrew text
+
+%% bidi-article.tex
+%% copyright 2023 gsobell
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+% https://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008 or later.
+%
+% This work has the LPPL maintenance status `author-maintained'.
+%
+% This work consists as found in `manifest.md'.
+
+\usepackage[bidi=basic, english]{babel}
+\babelprovide[onchar=fonts ids]{hebrew}
+\babelfont[hebrew]{rm}{David CLM}
+
+    \title{\textbf{Title Goes Here}}
+    \author{@gsobell}
+    \date{\today}
+    \addtolength{\topmargin}{-3cm}
+    \addtolength{\textheight}{3cm}
+
+\begin{document}
+
+\begin{center}
+
+\huge \bfseries Bidirectional Document
+\end{center}
+
+% \maketitle
+\pagenumbering{arabic}
+
+\section{On Rabbits and Lettuce:}
+A rabbit ate some lettuce-flavored carrot, and that was all.
+
+\begin{flushright}
+שפן אכל קצת גזר בטעם חסה, ודי.
+\end{flushright}
+
+\section{Lorem Ipsum - לורם איפסום}
+\begin{multicols}{2}
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+
+לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+
+הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+
+\end{multicols}
+\begin{flushright}
+
+
+ מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+
+הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+
+\end{flushright}
+
+
+\end{document}

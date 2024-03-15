@@ -6,17 +6,14 @@
 \usepackage{tikz-cd}
 \usepackage{float}
 \usepackage{wrapfig}
-\usepackage{xcolor}
-\usepackage[ruled,vlined]{algorithm2e}
-\usepackage{hyperref}
-\hypersetup{
-  colorlinks   = true,  % Colors links instead of ugly boxes
-  urlcolor     = blue,  % Color for external hyperlinks
-  linkcolor    = black, % Color of internal links
-  citecolor    = red    % Color of citations
-}
+\usepackage{polyglossia}
+\usepackage{multicol}
 
-%% cs-article.tex
+% NB: must compile with \XeTeX !
+% Make sure you have hebrew fonts installed.
+% Use flushright to align hebrew text
+
+%% bidi-article.tex
 %% copyright 2023 gsobell
 %
 % This work may be distributed and/or modified under the
@@ -31,18 +28,35 @@
 %
 % This work consists as found in `manifest.md'.
 
-    \title{\textbf{Ex 1 - Data Structures (67109)}}
+
+
+\setdefaultlanguage{english}
+\setotherlanguage{hebrew}
+\usepackage{fontspec}
+\newfontfamily\hebrewfont[Script=Hebrew]{David CLM}
+\newfontfamily\hebrewfonttt[Script=Hebrew]{Miriam Mono CLM}
+\newfontfamily\hebrewfontsf[Script=Hebrew]{Simple CLM}
+\usepackage{bidi}
+
+    \title{\textbf{Title Goes Here}}
     \author{@gsobell}
-    \date{Compiled on: \today}
+    \date{\today}
     \addtolength{\topmargin}{-3cm}
     \addtolength{\textheight}{3cm}
+
 \begin{document}
 
-\maketitle
+% \maketitle
 \pagenumbering{arabic}
 
-\section{Question 1}
-\subsection{A}
+
+\section{On Rabbits and Lettuce:}
+\begin{multicols}{2}
+\begin{flushright}
+\texthebrew{שפן אכל קצת גזר בטעם חסה, ודי.}
+ \end{flushright}
+A rabbit ate some lettuce-flavored carrot, and that was all.
+\end{multicols}
+
 
 \end{document}
-

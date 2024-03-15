@@ -1,17 +1,15 @@
+
 Files included under LPPL license:
 
 ```
+.
 ├── bidi-article
-│   ├── bidi-article-tex
-│   └── README.md
+│   ├── bidi-article-lualatex.tex
+│   ├── bidi-article-xetex.tex
+│   └── README.md
 ├── cover-page
-│   ├── README.md
-│   └── title.tex
-├── cs-article
-│   ├── cs-article.tex
-│   └── README.md
-└── math-article
-    ├── math-article.tex
-    └── README.md
+│   └── cover.tex
+└── preamble.tex
 ```
+
 Sample `.pdf`s and other files are not included.
