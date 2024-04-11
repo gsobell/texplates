@@ -1,6 +1,10 @@
 # texplates
 My personal $\LaTeX$ boilerplate.
 
+## minimal-working-example
+
+Cover, title, table of contents. 
+
 ## preamble
 
 Place in the parent directory, and prepend `\input{./preamble}` to your document.

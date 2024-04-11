@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+\input{./preamble}
+\title{\textbf{Title}}
+    \author{Author}
+    \date{Compiled on: \today}
+    \addtolength{\topmargin}{-3cm}
+    \addtolength{\textheight}{3cm}
+\begin{document}
+\newcommand{\makecover}{
+\begin{flushleft}
+    \huge\bfseries Title
+    %\Large \bfseries (Subtitle)
+\end{flushleft}
+    \rule{\linewidth}{5pt} % Black bar under title
+    \begin{flushright}
+            \thedate
+    \end{flushright}
+
+
+
+
+\vfill
+\begin{flushleft}
+\Large \bfseries{\theauthor}
+
+\Large{Organization}
+\end{flushleft}
+    \rule{\linewidth}{5pt}
+    \pagenumbering{gobble}
+\pagebreak
+}
+\makecover
+\maketitle
+\pagenumbering{roman}
+\setcounter{section}{0}
+% \renewcommand{\abstractname}{Syllabus}
+
+\begin{abstract}
+        \emph{Abstract here.}
+\end{abstract}
+
+\subsection*{Introduction}
+\emph{Introduction here.}
+
+\addcontentsline{toc}{section}{Syllabus}
+\addcontentsline{toc}{section}{Introduction}
+\newpage
+
+\addcontentsline{toc}{section}{Table of Contents}
+\tableofcontents
+
+% \addcontentsline{toc}{section}{List of Theorems}
+% \listoftheorems[ignoreall, show={theorem}]
+
+% \addcontentsline{toc}{section}{List of Definitions}
+% \renewcommand{\listtheoremname}{List of Definitions}
+% \listoftheorems[ignoreall, show={definition}]
+
+\newpage
+\pagenumbering{arabic}
+%\pagestyle{fancy}
+\section{Section 1}
+\emph{Document goes here.}
+
+\end{document}
