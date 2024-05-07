@@ -10,6 +10,9 @@ Files included under LPPL license:
 ├── minimal-working-example
 │   ├── minimal_working_example.tex
 │   └── preamble.tex
+├── article-with-cover
+│   ├── article-with-cover.tex
+│   └── preamble.tex
 └── cover-page
     └── cover.tex
 ```

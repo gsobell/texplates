@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
 \input{./preamble}
+% \usepackage{titling} <- in preamble
 \title{\textbf{Title}}
     \author{Author}
     \date{Compiled on: \today}
@@ -8,16 +9,13 @@
 \begin{document}
 \newcommand{\makecover}{
 \begin{flushleft}
-    \huge\bfseries Title
+    \huge\bfseries \theTitle
     %\Large \bfseries (Subtitle)
 \end{flushleft}
     \rule{\linewidth}{5pt} % Black bar under title
     \begin{flushright}
             \thedate
     \end{flushright}
-
-
-
 
 \vfill
 \begin{flushleft}
